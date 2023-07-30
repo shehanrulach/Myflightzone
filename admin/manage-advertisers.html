@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>My Flight Zone</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- External CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <span class="d-none d-lg-block">My Flight Zone</span>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div>
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+                <li class="nav-item dropdown pe-3">
+
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+                        <span class="d-none d-md-block dropdown-toggle ps-2">Shehan Rulach</span>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="login.html">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Sign Out</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="management-home.html">
+                    <i class="bi bi-grid"></i>
+                    <span>Management Dashboard</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-journal-text"></i><span>Manage Users</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="forms-nav" class="nav-content active " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="manage-customers.html">
+                            <i class="bi bi-circle"></i><span>Manage Customers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manage-advertisers.html" class="active">
+                            <i class="bi bi-circle"></i><span>Manage Advertisers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manage-sales-staff.html">
+                            <i class="bi bi-circle"></i><span>Manage Sales Staff</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manage-moderators.html">
+                            <i class="bi bi-circle"></i><span>Manage Moderators</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-bar-chart"></i><span>Reports</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="charts-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="management-ads-summary.html">
+                            <i class="bi bi-circle"></i><span>Ads Summary</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="management-pending-ads.html">
+                            <i class="bi bi-circle"></i><span>Pending Ads</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="management-approved-ads.html">
+                            <i class="bi bi-circle"></i><span>Approved Ads</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="management-rejected-ads.html">
+                            <i class="bi bi-circle"></i><span>Rejected Ads</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="login.html">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    <span>Sign Out</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main id="main" class="main">
+
+        <div class="pagetitle">
+            <h1>Manage Advertisers</h1>
+        </div>
+
+        <section class="section dashboard">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="card recent-sales overflow-auto">
+                                <div class="card-body">
+                                    <h5 class="card-title">Advertisers</h5>
+
+                                    <table class="table table-borderless datatable">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Id</th>
+                                                <th scope="col">Full Name</th>
+                                                <th scope="col">Email</th>
+                                                <th scope="col">Contact No</th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"><a href="#">#74</a></th>
+                                                <td>Shehan Rulach</td>
+                                                <td><a href="#" class="text-primary">shehan.rulach@gmail.com</a></td>
+                                                <td>+61 411 555 444</td>
+                                                <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editform">
+                                                    Edit
+                                                  </button></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><a href="#">#47</a></th>
+                                                <td>Emily Johnson</td>
+                                                <td><a href="#" class="text-primary">emily.johnson@example.com</a></td>
+                                                <td>+61 412 345 678</td>
+                                                <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editform">
+                                                    Edit
+                                                  </button></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><a href="#">#49</a></th>
+                                                <td>Liam Anderson</td>
+                                                <td><a href="#" class="text-primary">liam.anderson@example.com</a></td>
+                                                <td>+61 422 987 654</td>
+                                                <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editform">
+                                                    Edit
+                                                  </button></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><a href="#">#44</a></th>
+                                                <td>Olivia Smith</td>
+                                                <td><a href="#" class="text-primar">olivia.smith@example.com</a></td>
+                                                <td> +61 411 555 444</td>
+                                                <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editform">
+                                                    Edit
+                                                  </button></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><a href="#">#64</a></th>
+                                                <td>Ethan Brown</td>
+                                                <td><a href="#" class="text-primary">ethan.brown@example.com</a></td>
+                                                <td>+61 433 111 222</td>
+                                                <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editform">
+                                                    Edit
+                                                  </button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div class="modal fade" id="editform" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Edit Details</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Advertiser Details</h5>
+                                                            <form>
+                                                                <div class="row mb-3">
+                                                                    <label for="inputText" class="col-sm-2 col-form-label">Name</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="text" class="form-control" value="Shehan Rulach">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row mb-3">
+                                                                    <label for="inputText" class="col-sm-2 col-form-label">Email</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="text" class="form-control" value="shehan@gmail.com">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row mb-3">
+                                                                    <label for="inputText" class="col-sm-2 col-form-label">Contact</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="text" class="form-control" value="+61 411 555 444">
+                                                                    </div>
+                                                                </div>
+
+                                                                <br>
+
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-danger">Delete User</button>
+                                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                                </div>
+
+                                                            </form>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            &copy; Copyright <strong><span>My Flight Zone</span></strong>. All Rights Reserved
+        </div>
+    </footer>
+
+    <!-- Extrenal JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -69,7 +69,7 @@
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link " href="advertiser-home.html">
+                <a class="nav-link collapsed" href="advertiser-home.html">
                     <i class="bi bi-grid"></i>
                     <span>Advertiser Dashboard</span>
                 </a>
@@ -94,17 +94,17 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+                <a class="nav-link active" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
                     <i class="bi bi-bar-chart"></i><span>Reports</span><i class="bi bi-chevron-down ms-auto"></i>
                 </a>
-                <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <ul id="charts-nav" class="nav-content active " data-bs-parent="#sidebar-nav">
                     <li>
                         <a href="advertiser-pending-ads.html">
                             <i class="bi bi-circle"></i><span>Pending Ads</span>
                         </a>
                     </li>
                     <li>
-                        <a href="advertiser-approved-ads.html">
+                        <a href="advertiser-approved-ads.html" class="active">
                             <i class="bi bi-circle"></i><span>Approved Ads</span>
                         </a>
                     </li>
@@ -130,7 +130,7 @@
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1>Advertiser Dashboard</h1>
+            <h1>Approved Ads</h1>
         </div>
 
         <section class="section dashboard">
@@ -139,70 +139,11 @@
                 <div class="col-lg-12">
                     <div class="row">
 
-                        <div class="col-xxl-4 col-md-6">
-                            <div class="card info-card sales-card">
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Live Ads</h5>
-
-                                    <div class="d-flex align-items-center">
-                                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-card-image"></i>
-                                        </div>
-                                        <div class="ps-3">
-                                            <h6>36</h6>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-xxl-4 col-md-6">
-                            <div class="card info-card revenue-card">
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Pending Ads</h5>
-
-                                    <div class="d-flex align-items-center">
-                                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-card-image"></i>
-                                        </div>
-                                        <div class="ps-3">
-                                            <h6>8</h6>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-xxl-4 col-xl-12">
-
-                            <div class="card info-card customers-card">
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Rejected Ads</h5>
-
-                                    <div class="d-flex align-items-center">
-                                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-card-image"></i>
-                                        </div>
-                                        <div class="ps-3">
-                                            <h6>4</h6>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- Recent Ads -->
+                        <!-- Approved Ads -->
                         <div class="col-12">
                             <div class="card recent-sales overflow-auto">
                                 <div class="card-body">
-                                    <h5 class="card-title">Recent Ads</h5>
+                                    <h5 class="card-title">Approved Ads</h5>
 
                                     <table class="table table-borderless datatable">
                                         <thead>
@@ -230,7 +171,7 @@
                                                 <td><a href="#" class="text-primary">Discover the rough ocean waves</a></td>
                                                 <td>$450</td>
                                                 <td>10%</td>
-                                                <td><span class="badge bg-warning">Pending</span></td>
+                                                <td><span class="badge bg-success">Approved</span></td>
                                             </tr>
                                             <tr>
                                                 <th scope="row"><a href="#">#2049</a></th>
@@ -254,7 +195,7 @@
                                                 <td><a href="#" class="text-primar">Enjoy the warm weather this summer</a></td>
                                                 <td>$250</td>
                                                 <td>20%</td>
-                                                <td><span class="badge bg-danger">Rejected</span></td>
+                                                <td><span class="badge bg-success">Approved</span></td>
                                             </tr>
                                         </tbody>
                                     </table>

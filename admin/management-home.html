@@ -48,13 +48,6 @@
                     </a>
 
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-                        <li class="dropdown-header">
-                            <h6>Shehan Rulach</h6>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
                         <li>
                             <a class="dropdown-item d-flex align-items-center" href="login.html">
                                 <i class="bi bi-box-arrow-right"></i>
@@ -76,9 +69,9 @@
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link " href="index.html">
+                <a class="nav-link " href="management-home.html">
                     <i class="bi bi-grid"></i>
-                    <span>Admin Dashboard</span>
+                    <span>Management Dashboard</span>
                 </a>
             </li>
 
@@ -88,22 +81,22 @@
                 </a>
                 <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                     <li>
-                        <a href="forms-elements.html">
+                        <a href="manage-customers.html" class="active">
                             <i class="bi bi-circle"></i><span>Manage Customers</span>
                         </a>
                     </li>
                     <li>
-                        <a href="forms-layouts.html">
+                        <a href="manage-advertisers.html">
                             <i class="bi bi-circle"></i><span>Manage Advertisers</span>
                         </a>
                     </li>
                     <li>
-                        <a href="forms-layouts.html">
+                        <a href="manage-sales-staff.html">
                             <i class="bi bi-circle"></i><span>Manage Sales Staff</span>
                         </a>
                     </li>
                     <li>
-                        <a href="forms-layouts.html">
+                        <a href="manage-moderators.html">
                             <i class="bi bi-circle"></i><span>Manage Moderators</span>
                         </a>
                     </li>
@@ -115,31 +108,24 @@
                     <i class="bi bi-bar-chart"></i><span>Reports</span><i class="bi bi-chevron-down ms-auto"></i>
                 </a>
                 <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-
                     <li>
-                        <a href="charts-chartjs.html">
-                            <i class="bi bi-circle"></i><span>Revenue</span>
+                        <a href="management-ads-summary.html">
+                            <i class="bi bi-circle"></i><span>Ads Summary</span>
                         </a>
                     </li>
                     <li>
-                        <a href="charts-apexcharts.html">
-                            <i class="bi bi-circle"></i><span>Popular Destinations</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="charts-chartjs.html">
-                            <i class="bi bi-circle"></i><span>Ad Engagement Report</span>
+                        <a href="management-pending-ads.html">
+                            <i class="bi bi-circle"></i><span>Pending Ads</span>
                         </a>
                     </li>
                     <li>
-                        <a href="charts-apexcharts.html">
-                            <i class="bi bi-circle"></i><span>Click Through Report</span>
+                        <a href="management-approved-ads.html">
+                            <i class="bi bi-circle"></i><span>Approved Ads</span>
                         </a>
                     </li>
                     <li>
-                        <a href="charts-echarts.html">
-                            <i class="bi bi-circle"></i><span>Feedback Report</span>
+                        <a href="management-rejected-ads.html">
+                            <i class="bi bi-circle"></i><span>Rejected Ads</span>
                         </a>
                     </li>
                 </ul>
@@ -159,13 +145,7 @@
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1>Dashboard</h1>
-            <nav>
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Dashboard</li>
-                </ol>
-            </nav>
+            <h1>Management Dashboard</h1>
         </div>
 
         <section class="section dashboard">
@@ -177,30 +157,15 @@
                         <div class="col-xxl-4 col-md-6">
                             <div class="card info-card sales-card">
 
-                                <div class="filter">
-                                    <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                        <li class="dropdown-header text-start">
-                                            <h6>Filter</h6>
-                                        </li>
-
-                                        <li><a class="dropdown-item" href="#">Today</a></li>
-                                        <li><a class="dropdown-item" href="#">This Month</a></li>
-                                        <li><a class="dropdown-item" href="#">This Year</a></li>
-                                    </ul>
-                                </div>
-
                                 <div class="card-body">
-                                    <h5 class="card-title">Sales <span>| Today</span></h5>
+                                    <h5 class="card-title">Live Ads</h5>
 
                                     <div class="d-flex align-items-center">
                                         <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-cart"></i>
+                                            <i class="bi bi-card-image"></i>
                                         </div>
                                         <div class="ps-3">
-                                            <h6>145</h6>
-                                            <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span>
-
+                                            <h6>36</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -211,30 +176,15 @@
                         <div class="col-xxl-4 col-md-6">
                             <div class="card info-card revenue-card">
 
-                                <div class="filter">
-                                    <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                        <li class="dropdown-header text-start">
-                                            <h6>Filter</h6>
-                                        </li>
-
-                                        <li><a class="dropdown-item" href="#">Today</a></li>
-                                        <li><a class="dropdown-item" href="#">This Month</a></li>
-                                        <li><a class="dropdown-item" href="#">This Year</a></li>
-                                    </ul>
-                                </div>
-
                                 <div class="card-body">
-                                    <h5 class="card-title">Revenue <span>| This Month</span></h5>
+                                    <h5 class="card-title">Pending Ads</h5>
 
                                     <div class="d-flex align-items-center">
                                         <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-currency-dollar"></i>
+                                            <i class="bi bi-card-image"></i>
                                         </div>
                                         <div class="ps-3">
-                                            <h6>$3,264</h6>
-                                            <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">increase</span>
-
+                                            <h6>8</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -246,30 +196,15 @@
 
                             <div class="card info-card customers-card">
 
-                                <div class="filter">
-                                    <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                        <li class="dropdown-header text-start">
-                                            <h6>Filter</h6>
-                                        </li>
-
-                                        <li><a class="dropdown-item" href="#">Today</a></li>
-                                        <li><a class="dropdown-item" href="#">This Month</a></li>
-                                        <li><a class="dropdown-item" href="#">This Year</a></li>
-                                    </ul>
-                                </div>
-
                                 <div class="card-body">
-                                    <h5 class="card-title">Customers <span>| This Year</span></h5>
+                                    <h5 class="card-title">Rejected Ads</h5>
 
                                     <div class="d-flex align-items-center">
                                         <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-people"></i>
+                                            <i class="bi bi-card-image"></i>
                                         </div>
                                         <div class="ps-3">
-                                            <h6>1244</h6>
-                                            <span class="text-danger small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">decrease</span>
-
+                                            <h6>4</h6>
                                         </div>
                                     </div>
 
@@ -281,68 +216,60 @@
                         <!-- Recent Ads -->
                         <div class="col-12">
                             <div class="card recent-sales overflow-auto">
-
-                                <div class="filter">
-                                    <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                        <li class="dropdown-header text-start">
-                                            <h6>Filter</h6>
-                                        </li>
-
-                                        <li><a class="dropdown-item" href="#">Today</a></li>
-                                        <li><a class="dropdown-item" href="#">This Month</a></li>
-                                        <li><a class="dropdown-item" href="#">This Year</a></li>
-                                    </ul>
-                                </div>
-
                                 <div class="card-body">
                                     <h5 class="card-title">Recent Ads <span>| Today</span></h5>
 
                                     <table class="table table-borderless datatable">
                                         <thead>
                                             <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">Customer</th>
-                                                <th scope="col">Product</th>
+                                                <th scope="col">Id</th>
+                                                <th scope="col">Destination</th>
+                                                <th scope="col">Description</th>
                                                 <th scope="col">Price</th>
+                                                <th scope="col">Discount</th>
                                                 <th scope="col">Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <th scope="row"><a href="#">#2457</a></th>
-                                                <td>Brandon Jacob</td>
-                                                <td><a href="#" class="text-primary">At praesentium minu</a></td>
-                                                <td>$64</td>
+                                                <td>Brisbane</td>
+                                                <td><a href="#" class="text-primary">Roam around the Brisbane city</a></td>
+                                                <td>$350</td>
+                                                <td>20%</td>
                                                 <td><span class="badge bg-success">Approved</span></td>
                                             </tr>
                                             <tr>
                                                 <th scope="row"><a href="#">#2147</a></th>
-                                                <td>Bridie Kessler</td>
-                                                <td><a href="#" class="text-primary">Blanditiis dolor omnis similique</a></td>
-                                                <td>$47</td>
+                                                <td>Adelaide</td>
+                                                <td><a href="#" class="text-primary">Discover the rough ocean waves</a></td>
+                                                <td>$450</td>
+                                                <td>10%</td>
                                                 <td><span class="badge bg-warning">Pending</span></td>
                                             </tr>
                                             <tr>
                                                 <th scope="row"><a href="#">#2049</a></th>
-                                                <td>Ashleigh Langosh</td>
-                                                <td><a href="#" class="text-primary">At recusandae consectetur</a></td>
-                                                <td>$147</td>
+                                                <td>Gold Coast</td>
+                                                <td><a href="#" class="text-primary">Enjoy the vitamin sea of the Gold Coast</a></td>
+                                                <td>$350</td>
+                                                <td>-</td>
                                                 <td><span class="badge bg-success">Approved</span></td>
                                             </tr>
                                             <tr>
                                                 <th scope="row"><a href="#">#2644</a></th>
-                                                <td>Angus Grady</td>
-                                                <td><a href="#" class="text-primar">Ut voluptatem id earum et</a></td>
-                                                <td>$67</td>
+                                                <td>Sydney</td>
+                                                <td><a href="#" class="text-primary">Discover amazing places of Sydney</a></td>
+                                                <td>$350</td>
+                                                <td>10%</td>
+                                                <td><span class="badge bg-success">Approved</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><a href="#">#2644</a></th>
+                                                <td>Tasmania</td>
+                                                <td><a href="#" class="text-primar">Enjoy the warm weather this summer</a></td>
+                                                <td>$250</td>
+                                                <td>20%</td>
                                                 <td><span class="badge bg-danger">Rejected</span></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row"><a href="#">#2644</a></th>
-                                                <td>Raheem Lehner</td>
-                                                <td><a href="#" class="text-primary">Sunt similique distinctio</a></td>
-                                                <td>$165</td>
-                                                <td><span class="badge bg-success">Approved</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
